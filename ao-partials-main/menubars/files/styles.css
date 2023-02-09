@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'dumbledor1';
+    src: url('../assets/font/dumbledor/dum1/dum1.ttf')
+}
+
+h1 {
+
+    font-family: 'dumbledor1';
+}
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+
+}
+
+
+
+body {
+    display: flex;
+    margin: 0;
+    background-image: url(../assets/Recurso\ 6OK\ 8.png);
+    font-family: 'roboto', sans-serif;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+
+/*Header*/
+header {
+    display: flex;
+    width: 98vw;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    align-self: center;
+}
+
+.headerContainer {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+hr.dividerHeader {
+    border-top: 1px solid #bbb;
+    width: 100%;
+}
+
+.logo img {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.account {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+}
+
+.usericon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.buyGold {
+    width: 45%;
+    height: 80%;
+}
+
+.parrafos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+}
+
+.loginParagraph {
+    width: 50%;
+    text-align: end;
+    border-left: 1px solid white;
+}
+
+.loginParagraph p {
+    font-size: 18px;
+    color: white;
+}
+
+.helpParagraph {
+    width: 30%;
+    border-left: 1px solid white;
+}
+
+.helpParagraph p {
+    font-size: 1.125rem;
+    color: grey;
+    text-align: center;
+}
+
+.divider {
+    border-top: 1px solid #bbb;
+    width: 86%;
+}
+
+/*Barra de navegacion lateral*/
+navbar {
+    width: 15%;
+    border-right: 1px solid white;
+    height: 96%;
+    align-self: center;
+}
+
+navbar ul {
+    padding: 0;
+}
+
+navbar li {
+    font-size: 1.3rem;
+    list-style: none;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+hr.dividerNavbar {
+    border-top: 1px solid #bbb;
+    width: 95%;
+
+}
+
+.filtro {
+    margin-top: 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: lighter;
+}
+
+span {
+    color: #bbb;
+    text-align: end;
+    font-size: 0.938rem;
+}
+
+#rangoDePrecio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minMax {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.price {
+    font-size: 1.563rem;
+    color: white;
+}
+
+.rango {
+    background-color: black;
+    width: 30%;
+    height: 50%;
+}
+
+/*Parte del mercado*/
+
+#content {
+    display: flex;
+    width: 85%;
+
+}
+
+
+
+
+
+
+
+/*Desplegable */
+.desplegables {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 15px;
+}
+
+.desplegables ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    font-size: 0.938rem;
+    margin: 0;
+
+}
+
+.desplegables ul li {
+    height: 10px;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 0.938rem;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.desplegables ul li:hover {
+    background-color: transparent;
+}
+
+label {
+    display: block;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+}
+
+#collapse1 label:before {
+    height: 2px;
+    width: 10px;
+    background: white;
+    transition: all .5s;
+    opacity: 0;
+}
+
+#collapse1:checked~li {
+    display: none;
+    margin-top: 0;
+}
+
+#collapse2 label:before {
+    height: 2px;
+    width: 10px;
+    background: white;
+    transition: all .5s;
+    opacity: 0;
+}
+
+#collapse2:checked~li {
+    display: none;
+    margin-top: 0;
+}
+
+#collapse3 label:before {
+    height: 2px;
+    width: 10px;
+    background: white;
+    transition: all .5s;
+    opacity: 0;
+}
+
+#collapse3:checked~li {
+    display: none;
+    margin-top: 0;
+}
+
+#collapse4 label:before {
+    height: 2px;
+    width: 10px;
+    background: white;
+    transition: all .5s;
+    opacity: 0;
+}
+
+#collapse4:checked~li {
+    display: none;
+    margin-top: 0;
+}
+
+
+.rango:hover {
+    background-color: white;
+}
+.minMaxParrafos{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.minMaxParrafos p{
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
